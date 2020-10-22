@@ -11,6 +11,7 @@ namespace prov
              Evaluate()
         
             public class Book {
+                //Olika klasserna för book// 
                 Random generator = new Random();
                 private int  price; 
                 private string name;
@@ -21,6 +22,7 @@ namespace prov
 
             
                 public Book() {
+                    //slumpad generator för pris, rarity och cursed //
                     actualValue = generator.Next(0,501);
                     rarity = generator.Next(0,11);
                     cursed = generator.Next(0, 2) > 2; 
@@ -35,6 +37,7 @@ namespace prov
 
                 public int Evaluate()
                 {
+                    //Riktiga priset gånger rarity som blir nya priset// 
                    actualValue * rarity == actualValue
                    
 
@@ -42,10 +45,7 @@ namespace prov
 
                 public bool IsCursed() 
                 {
-                    if (book == IsCursed) 
-                    {
-                        
-                    }
+                
                 }
 
 
@@ -53,10 +53,14 @@ namespace prov
 
             public class customer 
             {
+                //olika klasserna för kunden //
                 private int money;
                 private bool interested;
                 private bool IfCursed; 
-                private 
+                
+                public int money {
+
+                }
 
 
             }
